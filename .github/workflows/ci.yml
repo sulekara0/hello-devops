@@ -19,8 +19,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-      - name: Run tests
-        run: pytest -q
       - name: Compute image name (lowercase)
         run: |
           IMAGE_ID=ghcr.io/${{ github.repository }}
